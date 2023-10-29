@@ -1,0 +1,171 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(210, 22, 210);
+}
+
+/*Parâmetros do Corpo do Site*/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #ffffffcc;
+    overflow-x: hidden;
+}
+
+/*Parâmetros da Header*/
+header{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+}
+
+/*Letra do BookHaven*/
+header h1{
+    color: rgb(210, 22, 210);
+    font-size: 30px;
+}
+
+/*Parâmetros da Barra Horizontal Rosa*/
+.pinkcolor{
+    width: 100%;
+    height: 15px;
+    background-color: rgb(210, 22, 210);
+
+    margin-top: 5px;
+    margin-bottom: 100px;
+}
+
+/*Parâmetros do Conteúdo do Site*/
+/*BORDA VERMELHA*/
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    margin-top: 5px;
+}
+
+/*Parâmetros da Lista de Gêneros*/
+/*BORDA ROXA*/
+.side{
+    width: 25%;
+    height: 40%;
+
+    display: flexbox;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+/*Pârametros do Catálogo*/
+/*BORDA ROSA*/
+.catalogo{
+    width: 75%;
+    height: 100%;
+
+    box-shadow: unset 2px rgb(20, 20, 20);
+}
+
+/*Parâmetros dos Títulos de Cada DIV*/
+.titulo{
+    width: 100%;
+    height: 30px;
+
+    display: flex;
+    position: relative;
+    left:50px;
+}
+
+.side .titulo {
+    position: relative;
+    left:25px;
+}
+/*Parâmetros para a Linha*/
+.row{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center baseline;
+    justify-content: space-evenly;
+
+    margin-bottom: 15px;
+}
+
+/*Parâmetros para o livro*/
+.book {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    padding: 10px;
+    width: 18%; /* Ocupa toda a largura da coluna */
+    text-align: center;
+    display: grid;
+
+    margin-right: 15px;
+
+    transition: 250ms ease-in;
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.book h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.book p {
+    font-size: 14px;
+    color: #666;
+
+    /* ... Outras regras de estilo ... */
+
+/* CSS para fazer o nono livro ocupar a terceira coluna e a terceira linha */
+.book:nth-child(9) { /* Este seletor corresponde ao nono elemento, que está na terceira linha e terceira coluna do grid */
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+}
+
+.book:hover{
+    transform: scale(1.1);
+    transition: 250ms ease-out;
+    background-color: #dfdfdf;
+}
+
+/*Parâmetros dos Links*/
+a{
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+}
+
+
+.lista{
+    position: relative;
+    left: 25px;
+}
+
+.lista a{
+    color: #ae3dbd;
+}
+
